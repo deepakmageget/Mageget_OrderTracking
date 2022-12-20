@@ -1,0 +1,11 @@
+<?php
+
+// $orderData = $this->getOrderData($data['order_id']);
+$orderData = $this->getOrderData(51);
+
+foreach($orderData as $order) {
+	echo "<pre>";
+    print_r($order->getData());
+}
+
+

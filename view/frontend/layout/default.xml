@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+       <script src="Mageget_OrderTracking::css/guestorder.css"/>
+       <script src="Mageget_OrderTracking::js/guestorder.js"/>
+    </head>
+     <body>
+        <!-- Code for Header Link -->
+        <referenceBlock name="header.links">
+            <block class="Magento\Framework\View\Element\Html\Link" name="blog-header-menu">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Track Your Order</argument>
+                    <argument name="path" xsi:type="string">ordertracking/order/</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+       
+    </body>
+</page>

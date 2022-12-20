@@ -1,0 +1,28 @@
+
+
+<div class="form-bg">
+    <div class="container order-flex">
+        <div class="row">
+            <div class="order-form-box">
+                <div class="form-container">
+                    <div class="form-icon">
+                        <!-- <i class="fa fa-user"></i> -->
+                        <img src="https://i.ibb.co/LZ6JJ7d/User-Profile-PNG.png" alt="">
+                  </div>
+                    <h3 class="title">Track Your Order</h3>
+                    <form class="form-horizontal" method="post" action="<?php echo $this->getUrl('ordertracking/order/table',['_secure'=>true]); ?>">
+                        <div class="form-group">
+                            <!-- <label>Order Number : </label> -->
+                            <input class="form-control" name="order_id" type="text" placeholder="Order Number">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label>Email Id </label> -->
+                            <input class="form-control" type="email" placeholder="Email Address">
+                        </div>
+                        <button type="submit" value="submit" class="btn btn-default">Status</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
